@@ -85,7 +85,7 @@
                 android:layout_weight="1"
                 android:gravity="center"
                 android:layout_margin="1dp"
-                android:text="Taso Cobranza"
+                android:text="Taso"
                 android:textSize="10sp"
                 android:textColor="@color/black"
                 android:background="@color/rowPar"/>
