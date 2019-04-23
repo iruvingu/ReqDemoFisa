@@ -1,7 +1,12 @@
 <resources>
- <string name="app_name">ReqDemoFisa</string>
- <string name="title_activity_table">TableActivity</string>
-
  <!-- TODO: Remove or change this placeholder text -->
  <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="app_name">ReqDemoFisa</string>
+    <string name="title_activity_table">TableActivity</string>
+
+    <string name="calidad_sucursal">Sucursal</string>
+    <string name="actual">Actual</string>
+    <string name="proy">Proy</string>
+    <string name="meta">Meta</string>
+    <string name="rank">Rank</string>
 </resources>

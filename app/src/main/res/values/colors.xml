@@ -1,6 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#008577</color>
-    <color name="colorPrimaryDark">#00574B</color>
-    <color name="colorAccent">#D81B60</color>
+    <color name="colorPrimary">#b71c1c</color>
+    <color name="colorPrimaryDark">#7f0000</color>
+    <color name="colorAccent">#f05545</color>
+
+    <!-- FISA COLORS -->
+    <color name="messageSent">#e8cfcf</color>
+    <color name="messageRecived">#f4e8e8</color>
+    <color name="textColorRaissedButton">#ffffff</color>
+    <color name="colorHorizontalBar">#b71c1c</color>
+    <color name="backgrounLogin">#cccccc</color>
+    <color name="rowPar">#e8cfcf</color>
+    <color name="rowInpar">#f4e8e8</color>
+    <color name="viewPagerUnselected">#fa8071</color>
+    <color name="viewPagerSelected">#ed2839</color>
+
+    <!-- TEXT COLOR -->
+    <color name="primaryTextColor">#ffffff</color>
+    <color name="secondaryTextColor">#ffffff</color>
+    <color name="backgroundActivity">#eff0f1</color>
+    <color name="black">#ff000000</color>
+    <color name="greyDark">#424242</color>
+    <color name="white">#ffffffff</color>
+    <color name="greyDifuse">#ffa8afb8</color>
+    <color name="backgroundChat">#f3f3f3</color>
+    <color name="orangeBackground">#ffb38a</color>
+    <color name="greyTen">#cccccc</color>
+    <color name="greenMid">#88008000</color>
+    <color name="backGroundShowImageChat">#bb000000</color>
+
 </resources>
