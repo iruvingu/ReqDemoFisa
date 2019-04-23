@@ -4,8 +4,11 @@
  xmlns:android="http://schemas.android.com/apk/res/android"
  android:layout_width="wrap_content"
  android:layout_height="wrap_content"
+ android:minWidth="80dp"
  android:text="OCCIDENTE"
- android:textSize="12sp"
+ android:textSize="10sp"
  android:padding="5dp"
+ android:background="@color/rowInpar"
+ android:layout_margin="1dp"
  />
 
