@@ -9,7 +9,16 @@
         tools:context=".TableActivity"
         >
 
+    <TextView
+            android:layout_marginTop="8dp"
+            android:id="@+id/tv_title"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
     <LinearLayout
+            android:layout_below="@+id/tv_title"
             android:id="@+id/table_names"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -100,22 +109,22 @@
             android:layout_marginLeft="8dp"
             android:layout_marginRight="8dp">
 
-        <include layout="@layout/content_progress_bar"></include>
-
         <android.support.v4.view.ViewPager
-                android:id="@+id/calidad_view_pager"
+                android:id="@+id/table_view_pager"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginTop="5dp">
 
-            <com.itsronald.widget.ViewPagerIndicator
-                    android:id="@+id/calidad_view_pager_indicator"
-                    android:layout_width="match_parent"
-                    android:layout_height="10dp"
-                    android:layout_gravity="center_horizontal|bottom"
-                    android:gravity="center_vertical"
-                    app:selectedDotColor="@color/viewPagerSelected"
-                    app:unselectedDotColor="@color/viewPagerUnselected"
+            <com.tbuonomo.viewpagerdotsindicator.DotsIndicator
+                    android:id="@+id/pageIndicator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="@id/viewPager"
+                    app:layout_constraintEnd_toEndOf="@id/viewPager"
+                    app:layout_constraintBottom_toBottomOf="@id/viewPager"
+                    app:dotsColor="@color/colorAccent"
+                    app:selectedDotColor="@color/colorPrimaryDark"
+                    app:dotsSize="5dp"
             />
 
         </android.support.v4.view.ViewPager>

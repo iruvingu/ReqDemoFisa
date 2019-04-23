@@ -1,14 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--
-* Company: Gendra.
- * Engineer: J. Hamlet Munguia Mtz.
- * Date: 05/06/2018.
- * Description: ProgressBar, para las actividades o para mostrar carga de datos.
- * Company check: Gendra.
- * Check and refactor by engineer: J. Hamlet Munguia Mtz.
- * Date check: 05/06/2018.
- * Last Update Description: .
--->
 <RelativeLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
