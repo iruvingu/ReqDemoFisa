@@ -5,6 +5,7 @@
  android:layout_height="wrap_content"
  android:weightSum="5"
  android:orientation="horizontal"
+
  >
 
  <TextView
@@ -14,9 +15,11 @@
   android:layout_height="wrap_content"
   android:layout_weight="1"
   android:text="0.0%"
-  android:textSize="12sp"
+  android:textSize="10sp"
   android:padding="5dp"
   android:gravity="center"
+  android:background="@color/rowInpar"
+  android:layout_margin="1dp"
   />
 
  <TextView
@@ -26,9 +29,11 @@
   android:layout_height="wrap_content"
   android:layout_weight="1"
   android:text="0.0%"
-  android:textSize="12sp"
+  android:textSize="10sp"
   android:padding="5dp"
   android:gravity="center"
+  android:background="@color/rowInpar"
+  android:layout_margin="1dp"
   />
 
  <TextView
@@ -38,9 +43,11 @@
   android:layout_height="wrap_content"
   android:layout_weight="1"
   android:text="0.0%"
-  android:textSize="12sp"
+  android:textSize="10sp"
   android:padding="5dp"
   android:gravity="center"
+  android:background="@color/rowInpar"
+  android:layout_margin="1dp"
   />
 
  <TextView
@@ -50,9 +57,11 @@
   android:layout_height="wrap_content"
   android:layout_weight="1"
   android:text="0.0%"
-  android:textSize="12sp"
+  android:textSize="10sp"
   android:padding="5dp"
   android:gravity="center"
+  android:background="@color/rowInpar"
+  android:layout_margin="1dp"
   />
 
  <TextView
@@ -62,9 +71,11 @@
   android:layout_height="wrap_content"
   android:layout_weight="1"
   android:text="0.0%"
-  android:textSize="12sp"
+  android:textSize="10sp"
   android:padding="5dp"
   android:gravity="center"
+  android:background="@color/rowInpar"
+  android:layout_margin="1dp"
   />
 
 </LinearLayout>
