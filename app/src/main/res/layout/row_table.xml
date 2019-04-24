@@ -1,84 +1,147 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="12"
+>
 
     <TextView
-            android:id="@+id/row_table_name"
+            android:id="@+id/nameColumn"
             android:layout_width="0dp"
-            android:layout_height="30dp"
+            android:layout_height="wrap_content"
             android:layout_weight="2"
-            android:text="Sucursal"
-            android:textSize="10sp"
-            android:layout_margin="1dp"
-            android:background="@color/rowInpar"
             android:gravity="center"
-    />
+            android:textSize="10sp"
+            android:textColor="@color/black"
+            android:background="@color/rowPar"
+            android:layout_margin="1dp"
+            android:text="@string/calidad_sucursal"
+            android:layout_gravity="center"/>
 
     <TextView
-            android:id="@+id/row_table_actual"
+            android:id="@+id/firstColumn"
             android:layout_width="0dp"
-            android:layout_height="30dp"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="40%"
-            android:layout_gravity="center"
-            android:textSize="10sp"
-            android:layout_margin="1dp"
-            android:background="@color/rowInpar"
             android:gravity="center"
-    />
+            android:layout_margin="1dp"
+            android:textSize="10sp"
+            android:background="@color/rowInpar"
+            android:textColor="@color/black"
+            android:text="EPRC"/>
 
     <TextView
-            android:id="@+id/row_table_proyection"
+            android:id="@+id/secondColumn"
             android:layout_width="0dp"
-            android:layout_height="30dp"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text=" 40%"
-            android:layout_gravity="center"
-            android:textSize="10sp"
-            android:layout_margin="1dp"
-            android:background="@color/rowInpar"
             android:gravity="center"
-    />
+            android:layout_margin="1dp"
+            android:textSize="10sp"
+            android:background="@color/rowInpar"
+            android:textColor="@color/black"
+            android:text="0-14"/>
 
     <TextView
-            android:id="@+id/row_table_meta"
+            android:id="@+id/thirdColumn"
             android:layout_width="0dp"
-            android:layout_height="30dp"
+            android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="40%"
-            android:layout_gravity="center"
-            android:textSize="10sp"
-            android:layout_margin="1dp"
-            android:background="@color/rowInpar"
             android:gravity="center"
-    />
+            android:layout_margin="1dp"
+            android:textSize="10sp"
+            android:background="@color/rowInpar"
+            android:textColor="@color/black"
+            android:text="1-29"/>
 
     <TextView
-            android:id="@+id/row_table_rank"
+            android:id="@+id/fourthColumn"
             android:layout_width="0dp"
-            android:layout_height="30dp"
+            android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="Rank"
-            android:layout_gravity="center"
-            android:textSize="10sp"
-            android:layout_margin="1dp"
-            android:background="@color/rowInpar"
             android:gravity="center"
-    />
+            android:layout_margin="1dp"
+            android:text="30-59"
+            android:textSize="10sp"
+            android:textColor="@color/black"
+            android:background="@color/rowInpar"/>
 
     <TextView
-            android:id="@+id/row_table_taso"
+            android:id="@+id/fifthColumn"
             android:layout_width="0dp"
-            android:layout_height="30dp"
+            android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="Taso"
-            android:layout_gravity="center"
-            android:textSize="10sp"
-            android:layout_margin="1dp"
-            android:background="@color/rowInpar"
             android:gravity="center"
-    />
+            android:layout_margin="1dp"
+            android:text="60-89"
+            android:textSize="10sp"
+            android:textColor="@color/black"
+            android:background="@color/rowInpar"/>
+
+    <TextView
+            android:id="@+id/sixthColumn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_margin="1dp"
+            android:text="60-89"
+            android:textSize="10sp"
+            android:textColor="@color/black"
+            android:background="@color/rowInpar"/>
+
+    <TextView
+            android:id="@+id/seventhColumn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_margin="1dp"
+            android:text="90-119"
+            android:textSize="10sp"
+            android:textColor="@color/black"
+            android:background="@color/rowInpar"/>
+
+    <TextView
+            android:id="@+id/eightColumn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_margin="1dp"
+            android:text="119-149"
+            android:textSize="10sp"
+            android:textColor="@color/black"
+            android:background="@color/rowInpar"/>
+
+    <TextView
+            android:id="@+id/ninthColumn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_margin="1dp"
+            android:text="150-179"
+            android:textSize="10sp"
+            android:textColor="@color/black"
+            android:background="@color/rowInpar"/>
+
+    <TextView
+            android:id="@+id/tenthColumn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_margin="1dp"
+            android:text="TASO"
+            android:textSize="10sp"
+            android:textColor="@color/black"
+            android:background="@color/rowInpar"/>
+
+
 
 </LinearLayout>

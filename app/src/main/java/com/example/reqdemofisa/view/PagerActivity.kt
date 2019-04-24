@@ -1,4 +1,4 @@
-package com.example.reqdemofisa
+package com.example.reqdemofisa.view
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
@@ -6,8 +6,8 @@ import android.support.v4.app.Fragment
 import android.support.v4.app.FragmentManager
 import android.support.v4.app.FragmentStatePagerAdapter
 import android.support.v4.view.ViewPager
-import android.view.View
 import android.widget.TextView
+import com.example.reqdemofisa.R
 import com.example.reqdemofisa.adapter.NameAdapter
 import com.example.reqdemofisa.model.SiteModel
 import kotlinx.android.synthetic.main.activity_pager.*
@@ -25,7 +25,8 @@ class PagerActivity : AppCompatActivity() {
   setData()
 
   //setViewPager
-  viewPager.adapter = PagerAdapter(supportFragmentManager, PAGE_NUMBER,titlePager)
+  viewPager.adapter =
+      PagerAdapter(supportFragmentManager, PAGE_NUMBER, titlePager)
   pageIndicator.setViewPager(viewPager)
 
   viewPager.addOnPageChangeListener(object  : ViewPager.OnPageChangeListener{

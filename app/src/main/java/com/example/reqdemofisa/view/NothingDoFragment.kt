@@ -1,4 +1,4 @@
-package com.example.reqdemofisa
+package com.example.reqdemofisa.view
 
 
 import android.os.Bundle
@@ -6,6 +6,7 @@ import android.support.v4.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.example.reqdemofisa.R
 import com.example.reqdemofisa.adapter.RecyclerViewPagerAdapter
 import com.example.reqdemofisa.model.SiteModel
 import kotlinx.android.synthetic.main.fragment_nothing_do.*
@@ -52,7 +53,7 @@ class NothingDoFragment : Fragment() {
 
  //companion
  companion object {
-  fun newInstance(bundle : Bundle) : NothingDoFragment{
+  fun newInstance(bundle : Bundle) : NothingDoFragment {
    var fragment = NothingDoFragment()
    if(bundle != null){
     fragment.arguments = bundle

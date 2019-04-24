@@ -1,10 +1,10 @@
-package com.example.reqdemofisa
+package com.example.reqdemofisa.view
 
 import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
 import android.widget.Toast
+import com.example.reqdemofisa.R
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
