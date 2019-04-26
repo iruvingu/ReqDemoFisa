@@ -47,7 +47,6 @@ class PagerActivity : AppCompatActivity() {
 
   })
 
-
  }
 
  //fun gral

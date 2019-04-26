@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="8dp"
+                                    android:layout_marginRight="8dp"
+                                    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+
+        <ph.ingenuity.tableview.TableView
+                android:id="@+id/table_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:table_column_header_height="@dimen/default_column_header_height"
+                app:table_row_header_width="@dimen/default_row_header_width"
+                app:table_selected_color="@color/colorPrimary"
+                app:table_separator_color="@color/colorAccent"
+                app:table_shadow_color="@color/table_view_default_shadow_background_color"
+                app:table_show_horizontal_separator="true"
+                app:table_show_vertical_separator="true"
+                app:table_unselected_color="@color/table_view_default_unselected_background_color">
+
+        </ph.ingenuity.tableview.TableView>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

@@ -9,17 +9,21 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
-        <activity android:name=".view.PagerActivity"
-            android:screenOrientation="portrait">
+        <activity android:name=".view.PropuestaActivity">
         </activity>
         <activity
-                android:name=".view.TableActivity"
-                android:label="@string/title_activity_table"
-                android:theme="@style/AppTheme.NoActionBar"
-                android:screenOrientation="landscape">
+                android:name=".PagerActivity"
+                android:screenOrientation="portrait">
         </activity>
-        <activity android:name=".view.MainActivity"
-            android:screenOrientation="portrait">
+        <activity
+                android:name=".TableActivity"
+                android:label="@string/title_activity_table"
+                android:screenOrientation="landscape"
+                android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+                android:name=".MainActivity"
+                android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 

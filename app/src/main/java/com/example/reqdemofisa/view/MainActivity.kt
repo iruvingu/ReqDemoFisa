@@ -27,5 +27,12 @@ class MainActivity : AppCompatActivity() {
             Toast.makeText(this, "Pager", Toast.LENGTH_SHORT).show()
         }
 
+        propuestaBtn.setOnClickListener {
+            val intent = Intent(this, PropuestaActivity::class.java)
+            //start activity
+            startActivity(intent)
+            Toast.makeText(this, "Propuesta", Toast.LENGTH_SHORT).show()
+        }
+
     }
 }

@@ -1,12 +1,37 @@
 <resources>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="app_name">ReqDemoFisa</string>
-    <string name="title_activity_table">TableActivity</string>
+  <string name="hello_blank_fragment">Hello blank fragment</string>
+  <string name="app_name">ReqDemoFisa</string>
+  <string name="title_activity_table">TableActivity</string>
 
-    <string name="calidad_sucursal">Sucursal</string>
-    <string name="actual">Actual</string>
-    <string name="proy">Proy</string>
-    <string name="meta">Meta</string>
-    <string name="rank">Rank</string>
+  <string name="calidad_sucursal">Sucursal</string>
+  <string name="actual">Actual</string>
+  <string name="proy">Proy</string>
+  <string name="meta">Meta</string>
+  <string name="rank">Rank</string>
+    
+    <!-- Proyection -->
+  <string name="projection1">projectionEPRC</string>
+  <string name="projection2">projection_0_14</string>
+  <string name="projection3">projection_1_29</string>
+  <string name="projection4">projection30_59</string>
+  <string name="projection5">projection_60_89</string>
+  <string name="projection6">projection_90_119</string>
+  <string name="projection7">projection_120_149</string>
+  <string name="projection8">projection_150_179</string>
+  <string name="projection9">projection_90_plus</string>
+  <string name="projection10">projectionTaso</string>
+
+    <!-- Taso -->
+  <string name="taso1">tasoEprc</string>
+  <string name="taso2">taso_0_14</string>
+  <string name="taso3">taso_30_59</string>
+  <string name="taso4">taso_90_plus</string>
+
+    <!-- Rank -->
+  <string name="rank1">rankEprc</string>
+  <string name="rank2">rank_0_14</string>
+  <string name="rank3">rank_30_59</string>
+  <string name="rank4">rank_90_plus</string>
+  
 </resources>

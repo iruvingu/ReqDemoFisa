@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<LinearLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:orientation="vertical"
         android:gravity="center"
         tools:context=".view.MainActivity">
 
@@ -18,8 +19,14 @@
             android:text="Pager"
             android:layout_below="@+id/tableBtn"
             android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    <Button android:id="@+id/propuestaBtn"
+            android:text="Propuesta"
+            android:layout_below="@+id/pagerBtn"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="182dp"/>
+            />
 
 
-</RelativeLayout>
+</LinearLayout>
