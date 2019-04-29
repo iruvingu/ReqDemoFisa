@@ -1,6 +1,7 @@
 package com.example.reqdemofisa.adapter
 
 import android.support.v7.widget.RecyclerView
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -13,13 +14,16 @@ import kotlin.math.exp
 
 class ExapandableAdapter: RecyclerView.Adapter<ExapandableAdapter.TitleViewHolder> {
 
-    var listTitles: MutableList<TitlesModel> = mutableListOf()
-    var siteModel : MutableList<SiteModel> = mutableListOf()
-    var columnList: MutableList<Any> = mutableListOf()
-    var rowHeadersList: MutableList<Any> = mutableListOf()
-    var cellList1: MutableList<MutableList<Any>> = mutableListOf()
-    var cellList2: MutableList<MutableList<Any>> = mutableListOf()
-    var cellList3: MutableList<MutableList<Any>> = mutableListOf()
+    private var listTitles: MutableList<TitlesModel> = mutableListOf()
+    private var siteModel : MutableList<SiteModel> = mutableListOf()
+    private var columnList: MutableList<Any> = mutableListOf()
+    private var columnList1: MutableList<Any> = mutableListOf()
+    private var columnList2: MutableList<Any> = mutableListOf()
+    private var columnList3: MutableList<Any> = mutableListOf()
+    private var rowHeadersList: MutableList<Any> = mutableListOf()
+    private var cellList1: MutableList<MutableList<Any>> = mutableListOf()
+    private var cellList2: MutableList<MutableList<Any>> = mutableListOf()
+    private var cellList3: MutableList<MutableList<Any>> = mutableListOf()
 
     constructor(listTitles: MutableList<TitlesModel>
                 , siteModel: MutableList<SiteModel>
@@ -29,6 +33,14 @@ class ExapandableAdapter: RecyclerView.Adapter<ExapandableAdapter.TitleViewHolde
         this.siteModel = siteModel
         this.columnList = columnList
         this.rowHeadersList = rowHeadersList
+
+      (0 until columnList.size).forEach { column ->
+        when (column) {
+          in 0..9 -> columnList1.add(columnList[column])
+          in 10..13 -> columnList2.add(columnList[column])
+          in 14..17 -> columnList3.add(columnList[column])
+        }
+      }
 
       (0 until rowHeadersList.size).forEach { row ->
         var cellListProjection = mutableListOf<Any>()
@@ -101,9 +113,9 @@ class ExapandableAdapter: RecyclerView.Adapter<ExapandableAdapter.TitleViewHolde
         val titles: TitlesModel = listTitles.get(position)
 
         when (titles.id) {
-          1 -> holder.bindTitle(titles.title, titles.expanded, cellList1, rowHeadersList, columnList)
-          2 -> holder.bindTitle(titles.title, titles.expanded, cellList2, rowHeadersList, columnList)
-          3 -> holder.bindTitle(titles.title, titles.expanded, cellList3, rowHeadersList, columnList)
+          1 -> holder.bindTitle(titles.title, titles.expanded, cellList1, rowHeadersList, columnList1)
+          2 -> holder.bindTitle(titles.title, titles.expanded, cellList2, rowHeadersList, columnList2)
+          3 -> holder.bindTitle(titles.title, titles.expanded, cellList3, rowHeadersList, columnList3)
         }
 
         holder.itemView.setOnClickListener{
@@ -132,6 +144,13 @@ class ExapandableAdapter: RecyclerView.Adapter<ExapandableAdapter.TitleViewHolde
 
             // Set the adapter to the created TableView
             itemView.table_view.adapter = tableAdapter
+
+            val randomRowHeadersList = mutableListOf<Any>()
+
+            (0 until rowHeadersList.size).forEach {
+              Log.v("RowList", """Row $it""")
+              randomRowHeadersList.add(DataCell("""Row $it"""))
+            }
 
             // Set the data to the adapter
             tableAdapter.setAllItems(cellsList, columnHeadersList, rowHeadersList)

@@ -12,7 +12,7 @@
                     android:width="1dp"
                     android:color="@color/colorAccent" />
             <solid android:color="@android:color/white" />
-            <corners android:topLeftRadius="50dp" />
+            <corners android:topLeftRadius="55dp" />
         </shape>
     </item>
 

@@ -9,6 +9,9 @@ import android.widget.TextView
 import android.widget.Toast
 import com.example.reqdemofisa.R
 import com.example.reqdemofisa.model.DataCell
+import kotlinx.android.synthetic.main.table_cell_text_data.view.*
+import kotlinx.android.synthetic.main.table_column_header_text_data.view.*
+import kotlinx.android.synthetic.main.table_row_header_text_data.view.*
 import ph.ingenuity.tableview.adapter.AbstractTableAdapter
 import ph.ingenuity.tableview.adapter.recyclerview.holder.AbstractViewHolder
 
@@ -42,7 +45,7 @@ class DataTableViewAdapter(private val context: Context): AbstractTableAdapter(c
     ) {
         val cell = cellItem as DataCell
         val cellViewHolder = holder as DataCellViewHolder
-        cellViewHolder.cellTextView.text = cell.content.toString()
+        cellViewHolder.setTextView(cell.content.toString())
     }
 
     override fun onCreateColumnHeaderViewHolder(
@@ -67,7 +70,7 @@ class DataTableViewAdapter(private val context: Context): AbstractTableAdapter(c
     ) {
         val columnHeaderCell = columnHeaderItem
         val columnHeaderViewHolder = holder as DataColumnHeaderViewHolder
-        columnHeaderViewHolder.cellTextView.text = columnHeaderCell.toString()
+        columnHeaderViewHolder.setTextView(columnHeaderCell.toString())
     }
 
     override fun onCreateRowHeaderViewHolder(
@@ -91,7 +94,7 @@ class DataTableViewAdapter(private val context: Context): AbstractTableAdapter(c
     ) {
         val rowHeaderCell = rowHeaderItem
         val rowHeaderViewHolder = holder as DataRowHeaderViewHolder
-        rowHeaderViewHolder.cellTextView.text = rowHeaderCell.toString()
+        rowHeaderViewHolder.setTextView(rowHeaderCell.toString())
     }
 
     override fun onCreateCornerView(): View? {
@@ -107,17 +110,20 @@ class DataTableViewAdapter(private val context: Context): AbstractTableAdapter(c
 
 
     class DataCellViewHolder(itemView: View) : AbstractViewHolder(itemView) {
-        val cellTextView: TextView
-            get() = itemView.findViewById(R.id.data_cell_data)
+        fun setTextView(text: String) {
+            itemView.data_cell_data.text = text
+        }
     }
 
     class DataColumnHeaderViewHolder(itemView: View) : AbstractViewHolder(itemView) {
-        val cellTextView: TextView
-            get() = itemView.findViewById(R.id.column_header_text)
+        fun setTextView(text: String) {
+            itemView.column_header_text.text = text
+        }
     }
 
     class DataRowHeaderViewHolder(itemView: View) : AbstractViewHolder(itemView) {
-        val cellTextView: TextView
-            get() = itemView.findViewById(R.id.row_header_text)
+        fun setTextView(text: String) {
+            itemView.row_header_text.text = text
+        }
     }
 }
