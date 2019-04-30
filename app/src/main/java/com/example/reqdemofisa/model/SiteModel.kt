@@ -3,29 +3,28 @@ package com.example.reqdemofisa.model
 import android.os.Parcelable
 import kotlinx.android.parcel.Parcelize
 
-
 @Parcelize
 data class SiteModel(val name : String = "") : Parcelable{
 
  //attributes
- var projectionEPRC : Float = 0f
- var projection_0_14 : Float = 0f
- var projection_1_29 : Float = 0f
- var projection30_59 : Float = 0f
- var projection_60_89 : Float= 0f
- var projection_90_119 : Float = 0f
- var projection_120_149 : Float = 0f
- var projection_150_179 : Float = 0f
- var projection_90_plus : Float = 0f
- var projectionTaso : Float = 0f
+ var projectionEPRC : Float = 99990000F
+ var projection_0_14 : Float = 99990000F
+ var projection_1_29 : Float = 99990000F
+ var projection30_59 : Float = 9999.88F
+ var projection_60_89 : Float= 9999.88F
+ var projection_90_119 : Float = 9999.88f
+ var projection_120_149 : Float = 9999.88f
+ var projection_150_179 : Float = 9999.88f
+ var projection_90_plus : Float = 9999.88f
+ var projectionTaso : Float = 999.99f
  var tasoEprc : Float = 0f
  var taso_0_14 : Float = 0f
  var taso_30_59 : Float = 0f
  var taso_90_plus : Float = 0f
- var rankEprc : Int= 0
- var rank_0_14 : Int= 0
- var rank_30_59 : Int= 0
- var rank_90_plus : Int = 0
+ var rankEprc : Int= 1
+ var rank_0_14 : Int= 3
+ var rank_30_59 : Int= 5
+ var rank_90_plus : Int = 8
 
  //constructor
 

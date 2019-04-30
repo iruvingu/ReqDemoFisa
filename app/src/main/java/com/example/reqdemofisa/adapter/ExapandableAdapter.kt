@@ -9,6 +9,7 @@ import com.example.reqdemofisa.R
 import com.example.reqdemofisa.model.DataCell
 import com.example.reqdemofisa.model.SiteModel
 import com.example.reqdemofisa.model.TitlesModel
+import com.example.reqdemofisa.util.DemoUtils
 import kotlinx.android.synthetic.main.lst_parent.view.*
 import kotlin.math.exp
 
@@ -49,16 +50,16 @@ class ExapandableAdapter: RecyclerView.Adapter<ExapandableAdapter.TitleViewHolde
         (0 until columnList.size).forEach { column ->
           val dataProjection: Any
           dataProjection = when (column) {
-            0 -> siteModel[row].projectionEPRC
-            1 -> siteModel[row].projection_0_14
-            2 -> siteModel[row].projection_1_29
-            3 -> siteModel[row].projection30_59
-            4 -> siteModel[row].projection_60_89
-            5 -> siteModel[row].projection_90_119
-            6 -> siteModel[row].projection_120_149
-            7 -> siteModel[row].projection_150_179
-            8 -> siteModel[row].projection_90_plus
-            9 -> siteModel[row].projectionTaso
+            0 -> DemoUtils.doubleToString(siteModel[row].projectionEPRC.toDouble(), "$##,###,###.#")
+            1 -> DemoUtils.doubleToString(siteModel[row].projection_0_14.toDouble(), "$##,###,###.#")
+            2 -> DemoUtils.doubleToString(siteModel[row].projection_1_29.toDouble(), "$##,###,###.#")
+            3 -> siteModel[row].projection30_59.toString()
+            4 -> siteModel[row].projection_60_89.toString()
+            5 -> siteModel[row].projection_90_119.toString()
+            6 -> siteModel[row].projection_120_149.toString()
+            7 -> siteModel[row].projection_150_179.toString()
+            8 -> siteModel[row].projection_90_plus.toString()
+            9 -> siteModel[row].projectionTaso.toString()
             else -> ""
           }
 
